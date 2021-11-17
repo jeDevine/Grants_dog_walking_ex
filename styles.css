@@ -9,14 +9,9 @@ body{
     justify-content: space-between;
   }
   
-  .grant{
-    
-  }
-  
   .nav{
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
   }
   
   .list{
