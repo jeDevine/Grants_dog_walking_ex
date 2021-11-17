@@ -1,12 +1,22 @@
 body{
     font-family: 'Lato', sans-serif;
-    color: rgba(255,255,255,0.8)
+    margin: 0%;
+    padding: 0%;
   }
   
+  .navBar{
+    color: rgba(255,255,255,0.8);
+  }
+
+  
+
   .container{
     display: flex;
     background-color: #551ABB;
     justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    width: 100%;
   }
   
   .nav{
@@ -16,4 +26,40 @@ body{
   
   .list{
     padding: 5px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container{
+      top: 95%;
+      bottom: 0%;
+      flex-direction: row-reverse;
+    }
+
+    h3{
+      margin-bottom: 0%;
+    }
+
+    .content{
+      display: flex;
+      background-color: #551ABB;
+      flex-direction: column;
+      color: rgba(255,255,255,0.8);
+      justify-content: flex-start;
+      position: relative;
+      left: 25%;
+      width: 50%;
+      height: 60%;
+    }
+
+    .topNav{
+      padding: 0%;
+      justify-content: space-around;
+    }
+
+    .topList{
+      text-decoration: none;
+      list-style-type: none;
+      color: white;
+      padding-block: 10px;
+    }
   }
